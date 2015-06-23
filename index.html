@@ -6,9 +6,9 @@
   <script type="text/javascript">
     var hash = location.hash;
     if (hash === "") {
-        document.write("<a href='https://kinto.dev.mozaws.net/v0/fxa-oauth/login?redirect="+location.href+"#'>Click here to start</a>");
+        document.write("<a href='https://kinto.dev.mozaws.net/v0/fxa-oauth/login?redirect="+location.href+"%23'>Click here to start</a>");
     } else {
-        document.write("Use Authorization:'Bearer " + hash + "'");
+        document.write("Use Authorization:'Bearer " + hash.slice(1));
     }
   </script>
 </body>
