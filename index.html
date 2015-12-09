@@ -7,8 +7,8 @@
     var hash = location.hash;
     if (hash === "") {
         document.write("<a href='https://kinto.dev.mozaws.net/v0/fxa-oauth/login?redirect="+location.href+"%23'>Token with Kinto v0</a><br/>");
-        document.write("<a href='https://kinto.dev.mozaws.net/fxa-oauth/login?redirect="+location.href+"%23'>Token with Kinto demo v1</a><br/>");
-        document.write("<a href='https://kinto-ota.dev.mozaws.net/fxa-oauth/login?redirect="+location.href+"%23'>Token with Kinto OTA</a><br/>");
+        document.write("<a href='https://kinto.dev.mozaws.net/v1/fxa-oauth/login?redirect="+location.href+"%23'>Token with Kinto demo v1</a><br/>");
+        document.write("<a href='https://kinto-ota.dev.mozaws.net/v1/fxa-oauth/login?redirect="+location.href+"%23'>Token with Kinto OTA</a><br/>");
     } else {
         document.write("Use <code>Authorization:'Bearer " + hash.slice(1) + "'</code>");
     }
